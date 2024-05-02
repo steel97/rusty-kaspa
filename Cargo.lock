@@ -2194,6 +2194,50 @@ dependencies = [
 ]
 
 [[package]]
+name = "kaspa-bindings"
+version = "0.13.6"
+dependencies = [
+ "async-trait",
+ "borsh",
+ "cfg-if 1.0.0",
+ "convert_case 0.6.0",
+ "dashmap",
+ "downcast",
+ "faster-hex 0.6.1",
+ "futures",
+ "js-sys",
+ "kaspa-addresses",
+ "kaspa-bip32",
+ "kaspa-consensus-core",
+ "kaspa-core",
+ "kaspa-daemon",
+ "kaspa-metrics-core",
+ "kaspa-rpc-core",
+ "kaspa-utils",
+ "kaspa-wallet-core",
+ "kaspa-wrpc-client",
+ "nw-sys",
+ "pad",
+ "regex",
+ "separator",
+ "serde",
+ "serde_json",
+ "textwrap 0.16.0",
+ "thiserror",
+ "tokio",
+ "wasm-bindgen",
+ "web-sys",
+ "workflow-core",
+ "workflow-dom",
+ "workflow-log",
+ "workflow-node",
+ "workflow-nw",
+ "workflow-store",
+ "workflow-terminal",
+ "workflow-wasm",
+]
+
+[[package]]
 name = "kaspa-bip32"
 version = "0.13.6"
 dependencies = [

@@ -2,6 +2,7 @@
 resolver = "2"
 members = [
     "daemon",
+    "bindings",
     "cli",
     "core",
     "wallet/macros",
@@ -127,6 +128,7 @@ kaspa-wrpc-server = { version = "0.13.6", path = "rpc/wrpc/server" }
 kaspa-wrpc-wasm = { version = "0.13.6", path = "rpc/wrpc/wasm" }
 kaspad = { version = "0.13.6", path = "kaspad" }
 kaspa-alloc = { version = "0.13.6", path = "utils/alloc" }
+kaspa-bindings = { version = "0.13.6", path = "bindings" }
 
 
 # external
