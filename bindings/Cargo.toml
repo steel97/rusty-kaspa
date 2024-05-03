@@ -24,6 +24,7 @@ name = "kaspa_bindings_lib"
 crate-type = ["cdylib", "lib"]
 
 [dependencies]
+bincode.workspace = true
 async-trait.workspace = true
 borsh.workspace = true
 cfg-if.workspace = true
@@ -43,6 +44,8 @@ kaspa-rpc-core.workspace = true
 kaspa-utils.workspace = true
 kaspa-wallet-core.workspace = true
 kaspa-wrpc-client.workspace = true
+kaspa-txscript-errors.workspace = true
+kaspa-txscript.workspace = true
 nw-sys.workspace = true
 pad.workspace = true
 regex.workspace = true
