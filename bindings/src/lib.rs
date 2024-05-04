@@ -37,31 +37,24 @@ pub extern "C" fn build_transaction(
             return E_CHANGEADDRESS_DECODE;
         }
     };
-    println!("={}=", change_address);
     let utxo_entry_source = match u8_array_to_str(&utxo_entry_source) {
         Ok(s) => s,
         Err(e) => {
             return E_UTXOLIST_DECODE;
         }
     };
-    println!("={}=", utxo_entry_source);
     let outputs = match u8_array_to_str(&outputs) {
         Ok(s) => s,
         Err(e) => {
             return E_OUTPUTS_DECODE;
         }
     };
-    println!("={}=", outputs);
-    println!("={}=", priority_fee);
     let payload = match u8_array_to_str(&payload) {
         Ok(s) => s,
         Err(e) => {
             return E_PAYLOAD_DECODE;
         }
     };
-    println!("={}=", payload);
-    println!("={}=", sig_op_count);
-    println!("={}=", minimum_signatures);
     // params end
 
     OP_OK
